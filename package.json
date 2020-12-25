@@ -1,0 +1,35 @@
+{
+  "name": "git-commit-standardization",
+  "version": "1.0.0",
+  "description": "standardize git commit message and manage version by changelog",
+  "main": "index.js",
+  "scripts": {
+    "commit": "git-cz",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heiye1991/git-commit-standardization.git"
+  },
+  "keywords": [
+    "git"
+  ],
+  "author": "heiye1991<1604043458@qq.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/heiye1991/git-commit-standardization/issues"
+  },
+  "homepage": "https://github.com/heiye1991/git-commit-standardization#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "commitizen": "^4.2.2",
+    "conventional-changelog-cli": "^2.1.1",
+    "cz-conventional-changelog": "^3.3.0"
+  }
+}
